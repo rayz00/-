@@ -1,0 +1,25 @@
+int A[] = { 1,3,5,7,9 };
+int B[] = { 2,4,6,8,10 };
+vector<int> C;
+
+void merge(int A[], int B[],vector<int> &C) {
+	int i = 0, j = 0;
+	while (i <= 4 && j <= 4) {
+		if (A[i] < B[j]) {
+			C.push_back(A[i]);
+			i++;
+		}
+		else {
+			C.push_back(B[j]);
+			j++;
+		}
+	}
+	while (i <= 4) {
+		C.push_back(A[i]);
+		i++;
+	}
+	while (j <= 4) {
+		C.push_back(B[j]);
+		j++;
+	}
+}
