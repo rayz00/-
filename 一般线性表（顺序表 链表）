@@ -1,4 +1,4 @@
-C风格，使用构造函数
+C风格，构造函数建表
 #include<iostream>
 using namespace std;
 
@@ -30,11 +30,12 @@ int main() {
 	}
 }
 
-C风格，使用insert操作创建链表
+C风格，利用头插/尾插操作建表
 
 
 
-//模板
+
+//C++模板类型风格
 
 
 
