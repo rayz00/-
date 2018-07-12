@@ -1,7 +1,36 @@
-node；指向node的指针；head和tail指针
-//C风格
+C风格，使用构造函数，有head结点
+#include<iostream>
+using namespace std;
 
+struct node{      //成员
+	int data;
+	node *next;
+}Node;
 
+node *create() {          //构造函数
+	node *head, *curr;
+	head = new node;
+	head->next = NULL;				//表头结点
+	curr = head;
+	while (cin >> Node.data) {
+		curr->next = new node;
+		curr = curr->next;
+		curr->data = Node.data;
+	}
+	curr->next = NULL;
+	return head;
+}
+
+int main() {
+	node *link=create();        
+	while (link->next)            //遍历操作
+	{
+		cout << link->next->data << endl;
+		link = link->next;
+	}
+}
+
+C风格，使用insert创建链表
 
 
 
