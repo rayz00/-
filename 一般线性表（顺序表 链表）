@@ -1,16 +1,16 @@
-C风格，使用构造函数，有head结点
+C风格，使用构造函数
 #include<iostream>
 using namespace std;
 
-struct node{      //成员
+struct node{      
 	int data;
 	node *next;
 }Node;
 
-node *create() {          //构造函数
+node *create() {          
 	node *head, *curr;
 	head = new node;
-	head->next = NULL;				//表头结点
+	head->next = NULL;				
 	curr = head;
 	while (cin >> Node.data) {
 		curr->next = new node;
@@ -23,14 +23,14 @@ node *create() {          //构造函数
 
 int main() {
 	node *link=create();        
-	while (link->next)            //遍历操作
+	while (link->next)            
 	{
 		cout << link->next->data << endl;
 		link = link->next;
 	}
 }
 
-C风格，使用insert创建链表
+C风格，使用insert操作创建链表
 
 
 
