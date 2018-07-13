@@ -1,13 +1,12 @@
-C风格，构造函数建表
 #include<iostream>
 using namespace std;
-
-struct node{      
+//C风格链表
+struct node{
 	int data;
 	node *next;
 }Node;
-
-node *create() {          
+//构造函数
+node *create() {
 	node *head, *curr;
 	head = new node;
 	head->next = NULL;				
@@ -20,13 +19,14 @@ node *create() {
 	curr->next = NULL;
 	return head;
 }
+//操作函数
 
 int main() {
-	node *link=create();        
-	while (link->next)            
+	node *list=create();        
+	while (list->next)            
 	{
-		cout << link->next->data << endl;
-		link = link->next;
+		cout << list->next->data << endl;
+		list = list->next;
 	}
 }
 
@@ -35,7 +35,10 @@ C风格，利用头插/尾插操作建表
 
 
 
-//C++模板类型风格
+//C++模板类+迭代器
+
+
+
 
 
 
