@@ -1,0 +1,22 @@
+判断回文
+bool isPalindromic(string s) {
+	string p = s;
+	reverse(p.begin(), p.end());
+	return p == s;
+}
+
+判断素数
+bool isPrime(int x){
+  if(x<=1) return false;
+  for(int i=2;i<=sqrt(x);++i)
+      if(x%2==0)
+          return false;
+  return true;
+}
+
+最大公约数
+int gcd(int m, int n) {
+	return m % n == 0 ? n : gcd(n, m%n);
+}
+
+进制转换
