@@ -1,0 +1,22 @@
+牛顿法求平方根
+迭代公式：Xn+1=(Xn + a/Xn)/2
+#include <iostream>
+using namespace std;
+int main()
+{
+    double EPS=0.001;   //求出的值和真实的平方根差距小于EPS
+    double a;
+    cin>>a;             //求a的平方根
+    if(a>=0){
+        double x=a/2,lastX=x+1+EPS;             //确保进行至少一次迭代
+        while(x-lastX>EPS||lastX-x>EPS){        //若精度不够继续迭代
+            lastX=x;
+            x=(x+a/x)/2;
+        }
+        cout<<x;
+    }
+    else
+        cout<<"It can't be nagitive.";
+}
+
+
