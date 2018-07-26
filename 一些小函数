@@ -1,8 +1,8 @@
 判断回文
 bool isPalindromic(string s) {
-	string p = s;
-	reverse(p.begin(), p.end());
-	return p == s;
+	string t = s;
+	reverse(t.begin(), t.end());
+	return t == s;
 }
 
 判断素数
@@ -12,6 +12,11 @@ bool isPrime(int x){
       if(x%2==0)
           return false;
   return true;
+}
+
+判断闰年	//闰年补时，如果4年一补就过了，所以百年不补。但这样又不够，所以逢400年补一次。
+bool leap(int x) {
+	return x % 4 == 0 && x % 100 || x % 400 == 0;
 }
 
 最大公约数
