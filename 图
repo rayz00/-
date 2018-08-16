@@ -1,0 +1,7 @@
+常见问题有图的遍历，连通性，最短和最长距离，最小生成树。
+Dijkstra算法求最短距离：
+int G[100][100];   //邻接矩阵
+int dist[100];     //v0到各点的值
+int prev[100]；    //前驱数组
+bool marked[100]； //
+void Dijkstra(int s,int v)
